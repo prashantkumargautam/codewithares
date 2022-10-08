@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outline Effect</title>
+</head>
+<body>
+
+    <svg class="svg-filters" width="0" height="0" viewBox="0 0 0 0" xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <defs>
+            <filter id="stroke">
+                <feMorphology in="SourceGraphic" operator="erode" radius="1" result="erode" />
+                <feMorphology in="SourceGraphic" operator="dilate" radius="1" result="dilate" />
+                <feComposite in="erode" in2="dilate" operator="xor" />
+            </filter>
+        </defs>
+    </svg>
+    
+    <h1 class="outline-css">ARES</h1>
+    <h1 class="outline-svg">ARES</h1>
+    <h1 class="outline-svg gradient">ARES</h1>
+    
+</body>
+</html>

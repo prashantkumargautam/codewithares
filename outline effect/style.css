@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@300..900&display=swap");
+
+html {
+	font-family: Figtree, sans-serif;
+}
+
+h1 {
+	font-size: 20vw;
+	font-weight: 900;
+	line-height: 1;
+	margin: 0;
+	text-align: center;
+	color: red;
+}
+
+.outline-css {
+	color: transparent;
+	-webkit-text-stroke: 2px red;
+}
+
+.outline-svg {
+	filter: url(#stroke);
+}
+
+.gradient {
+	background: linear-gradient(90deg, red, blue);
+	color: transparent;
+	-webkit-background-clip: text;
+}
